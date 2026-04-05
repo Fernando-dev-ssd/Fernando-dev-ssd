@@ -121,20 +121,10 @@ Tenho diversos cursos na área de programação e sigo em constante evolução, 
 <br/>
 <br/>
 
----
-
-### :fire: Minhas estatísticas :
-
 [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=Fernando-dev-ssd&locale=pt_BR&mode=weekly)](https://git.io/streak-stats)
 
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-
 ---
+<br/>
 
 ### 💼 Sobre mim
 
