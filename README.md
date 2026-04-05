@@ -7,7 +7,6 @@ Atuo na área de tecnologia com foco em **desenvolvimento fullstack** e **análi
 
 Atualmente, trabalho em uma empresa de **broadcast de games**, onde desenvolvo **APIs para coleta e tratamento de dados dos jogos**, utilizados em transmissões ao vivo, além de criar **ferramentas, integrações e assets visuais** que dão suporte à operação e à exibição das informações durante as partidas.
 
-Tenho diversos cursos na área de programação e sigo em constante evolução, buscando sempre aprimorar minhas habilidades técnicas e criar soluções práticas, funcionais e bem estruturadas.
 
 <p align="left">
     <a href="https://www.instagram.com/fernand0.ssd" target="_blank">
