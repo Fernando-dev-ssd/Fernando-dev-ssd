@@ -1,0 +1,70 @@
+<svg width="300" height="165" viewBox="0 0 300 165" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="titleId descId">
+  <title id="titleId">Most Used Languages</title>
+  <desc id="descId">Linguagens mais utilizadas por Fernando Santos.</desc>
+
+  <style>
+    .header {
+      font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
+      fill: #2f80ed;
+    }
+
+    .lang-name {
+      font: 400 11px "Segoe UI", Ubuntu, Sans-Serif;
+      fill: #434d58;
+    }
+  </style>
+
+  <rect
+    x="0.5"
+    y="0.5"
+    rx="4.5"
+    height="99%"
+    width="299"
+    fill="#fffefe"
+    stroke="#e4e2e2"
+    stroke-opacity="1"
+  />
+
+  <g transform="translate(25, 35)">
+    <text x="0" y="0" class="header">Most Used Languages</text>
+  </g>
+
+  <g transform="translate(25, 55)">
+    <rect x="0" y="0" width="110" height="8" rx="5" fill="#3776AB"/>
+    <rect x="110" y="0" width="55" height="8" rx="0" fill="#F7DF1E"/>
+    <rect x="165" y="0" width="35" height="8" rx="0" fill="#E34F26"/>
+    <rect x="200" y="0" width="25" height="8" rx="0" fill="#02569B"/>
+    <rect x="225" y="0" width="20" height="8" rx="0" fill="#0175C2"/>
+    <rect x="245" y="0" width="10" height="8" rx="0" fill="#3DDC84"/>
+
+    <g transform="translate(0,25)">
+      <circle cx="5" cy="6" r="5" fill="#3776AB" />
+      <text x="15" y="10" class="lang-name">Python 44%</text>
+    </g>
+
+    <g transform="translate(0,50)">
+      <circle cx="5" cy="6" r="5" fill="#F7DF1E" />
+      <text x="15" y="10" class="lang-name">JavaScript 22%</text>
+    </g>
+
+    <g transform="translate(150,25)">
+      <circle cx="5" cy="6" r="5" fill="#E34F26" />
+      <text x="15" y="10" class="lang-name">HTML 14%</text>
+    </g>
+
+    <g transform="translate(150,50)">
+      <circle cx="5" cy="6" r="5" fill="#02569B" />
+      <text x="15" y="10" class="lang-name">Flutter 10%</text>
+    </g>
+
+    <g transform="translate(0,75)">
+      <circle cx="5" cy="6" r="5" fill="#0175C2" />
+      <text x="15" y="10" class="lang-name">Dart 7%</text>
+    </g>
+
+    <g transform="translate(150,75)">
+      <circle cx="5" cy="6" r="5" fill="#3DDC84" />
+      <text x="15" y="10" class="lang-name">Android 3%</text>
+    </g>
+  </g>
+</svg>
