@@ -1,0 +1,98 @@
+<svg width="467" height="195" viewBox="0 0 467 195" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="titleId descId">
+  <title id="titleId">Fernando Santos GitHub Stats</title>
+  <desc id="descId">Estatísticas personalizadas do perfil de Fernando Santos no GitHub.</desc>
+
+  <style>
+    .header {
+      font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
+      fill: #2f80ed;
+    }
+
+    .stat {
+      font: 600 14px 'Segoe UI', Ubuntu, "Helvetica Neue", Sans-Serif;
+      fill: #434d58;
+    }
+
+    .bold {
+      font-weight: 700;
+    }
+
+    .icon {
+      fill: #4c71f2;
+    }
+
+    .rank-text {
+      font: 800 24px 'Segoe UI', Ubuntu, Sans-Serif;
+      fill: #434d58;
+    }
+
+    .rank-circle-rim {
+      stroke: #2f80ed;
+      fill: none;
+      stroke-width: 6;
+      opacity: 0.2;
+    }
+
+    .rank-circle {
+      stroke: #2f80ed;
+      fill: none;
+      stroke-width: 6;
+      stroke-linecap: round;
+      opacity: 0.8;
+      transform: rotate(-90deg);
+      transform-origin: 0 0;
+      stroke-dasharray: 251.2;
+      stroke-dashoffset: 60;
+    }
+  </style>
+
+  <rect
+    x="0.5"
+    y="0.5"
+    rx="4.5"
+    height="99%"
+    width="466"
+    fill="#fffefe"
+    stroke="#e4e2e2"
+    stroke-opacity="1"
+  />
+
+  <g transform="translate(25, 35)">
+    <text x="0" y="0" class="header">Fernando Santos's GitHub Stats</text>
+  </g>
+
+  <g transform="translate(390.5, 102.5)">
+    <circle class="rank-circle-rim" cx="-10" cy="-10" r="40" />
+    <circle class="rank-circle" cx="-10" cy="-10" r="40" />
+    <text x="-10" y="-5" text-anchor="middle" class="rank-text">A</text>
+  </g>
+
+  <g transform="translate(25, 55)">
+    <svg width="320" height="130">
+      <g transform="translate(0,0)">
+        <text class="stat bold" x="25" y="12.5">⭐ Total Stars Earned:</text>
+        <text class="stat bold" x="235" y="12.5">--</text>
+      </g>
+
+      <g transform="translate(0,25)">
+        <text class="stat bold" x="25" y="12.5">🧠 Total Commits:</text>
+        <text class="stat bold" x="235" y="12.5">--</text>
+      </g>
+
+      <g transform="translate(0,50)">
+        <text class="stat bold" x="25" y="12.5">🔀 Total PRs:</text>
+        <text class="stat bold" x="235" y="12.5">--</text>
+      </g>
+
+      <g transform="translate(0,75)">
+        <text class="stat bold" x="25" y="12.5">🐞 Total Issues:</text>
+        <text class="stat bold" x="235" y="12.5">--</text>
+      </g>
+
+      <g transform="translate(0,100)">
+        <text class="stat bold" x="25" y="12.5">📦 Public Repositories:</text>
+        <text class="stat bold" x="235" y="12.5">--</text>
+      </g>
+    </svg>
+  </g>
+</svg>
