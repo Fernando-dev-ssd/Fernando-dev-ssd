@@ -106,14 +106,14 @@ Atualmente, trabalho em uma empresa de **broadcast de games**, onde desenvolvo *
     alt="GitHub Stats" 
     height="200" 
     style="padding-right: 10px;" 
-    src="https://github-readme-stats.vercel.app/api?username=Fernando-dev-ssd&show_icons=true&theme=tokyonight&include_all_commits=true&locale=pt-br" 
+    src="./assets/github-stats.svg" 
   />
 
   <img 
     align="left" 
     alt="Top Langs" 
     height="200" 
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=Fernando-dev-ssd&theme=tokyonight&layout=compact&custom_title=Tecnologias&langs_count=8" 
+    src="./assets/top-langs.svg" 
   />
 </p>
 
