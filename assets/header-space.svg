@@ -1,23 +1,33 @@
-<svg width="1500" height="120" viewBox="0 0 1500 120" xmlns="http://www.w3.org/2000/svg">
+<svg width="1500" height="150" viewBox="0 0 1500 150" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <radialGradient id="n1" cx="18%" cy="50%" r="32%">
-      <stop offset="0%" stop-color="#4a0e8f" stop-opacity="0.42"/>
+    <radialGradient id="n1" cx="18%" cy="50%" r="35%">
+      <stop offset="0%" stop-color="#4a0e8f" stop-opacity="0.45"/>
       <stop offset="100%" stop-color="#0a0a1e" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="n2" cx="55%" cy="42%" r="28%">
-      <stop offset="0%" stop-color="#0e4a9f" stop-opacity="0.36"/>
+    <radialGradient id="n2" cx="55%" cy="45%" r="30%">
+      <stop offset="0%" stop-color="#0e4a9f" stop-opacity="0.40"/>
       <stop offset="100%" stop-color="#0a0a1e" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="n3" cx="82%" cy="58%" r="22%">
-      <stop offset="0%" stop-color="#8f0e6a" stop-opacity="0.30"/>
+    <radialGradient id="n3" cx="82%" cy="58%" r="26%">
+      <stop offset="0%" stop-color="#8f0e6a" stop-opacity="0.35"/>
       <stop offset="100%" stop-color="#0a0a1e" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="n4" cx="40%" cy="30%" r="15%">
-      <stop offset="0%" stop-color="#1e3a8f" stop-opacity="0.22"/>
+    <radialGradient id="n4" cx="40%" cy="28%" r="18%">
+      <stop offset="0%" stop-color="#1e3a8f" stop-opacity="0.28"/>
       <stop offset="100%" stop-color="#0a0a1e" stop-opacity="0"/>
     </radialGradient>
+    <linearGradient id="cg1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="white" stop-opacity="0"/>
+      <stop offset="75%" stop-color="white" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="white" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="cg2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b8d4ff" stop-opacity="0"/>
+      <stop offset="75%" stop-color="#b8d4ff" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#b8d4ff" stop-opacity="1"/>
+    </linearGradient>
     <style>
-      @keyframes tw{0%,100%{opacity:1}50%{opacity:.08}}
+      @keyframes tw{0%,100%{opacity:1}50%{opacity:.07}}
       .s1{animation:tw 2.0s 0.0s ease-in-out infinite}
       .s2{animation:tw 2.4s 0.5s ease-in-out infinite}
       .s3{animation:tw 1.7s 0.9s ease-in-out infinite}
@@ -30,81 +40,115 @@
       .s0{animation:tw 1.8s 2.0s ease-in-out infinite}
     </style>
   </defs>
-  <rect width="1500" height="120" fill="#0a0a1e"/>
-  <rect width="1500" height="120" fill="url(#n1)"/>
-  <rect width="1500" height="120" fill="url(#n2)"/>
-  <rect width="1500" height="120" fill="url(#n3)"/>
-  <rect width="1500" height="120" fill="url(#n4)"/>
+
+  <rect width="1500" height="150" fill="#0a0a1e"/>
+
+  <rect width="1500" height="150" fill="url(#n1)">
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="6s" begin="0s" repeatCount="indefinite"/>
+  </rect>
+  <rect width="1500" height="150" fill="url(#n2)">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="8s" begin="2s" repeatCount="indefinite"/>
+  </rect>
+  <rect width="1500" height="150" fill="url(#n3)">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="7s" begin="4s" repeatCount="indefinite"/>
+  </rect>
+  <rect width="1500" height="150" fill="url(#n4)">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="9s" begin="1s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Shooting star 1 – white, -14 deg -->
+  <g transform="rotate(-14,750,75)">
+    <rect x="-120" y="32" width="120" height="1.8" fill="url(#cg1)" opacity="0">
+      <animateTransform attributeName="transform" type="translate" from="0,0" to="2200,0" dur="10s" begin="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.05;0.08;0.30;0.35;1" dur="10s" begin="1.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Shooting star 2 – blue tint, -9 deg -->
+  <g transform="rotate(-9,750,75)">
+    <rect x="-90" y="108" width="90" height="1.4" fill="url(#cg2)" opacity="0">
+      <animateTransform attributeName="transform" type="translate" from="0,0" to="2200,0" dur="10s" begin="6.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;0.85;0.85;0;0" keyTimes="0;0.05;0.08;0.28;0.33;1" dur="10s" begin="6.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
 
   <circle class="s1" cx="23"   cy="15"  r="0.8" fill="#ffffff"/>
   <circle class="s2" cx="67"   cy="48"  r="0.6" fill="#b8d4ff"/>
   <circle class="s3" cx="112"  cy="22"  r="1.0" fill="#ffffff"/>
-  <circle class="s4" cx="158"  cy="81"  r="0.7" fill="#ffffff"/>
+  <circle class="s4" cx="158"  cy="95"  r="0.7" fill="#ffffff"/>
   <circle class="s5" cx="201"  cy="37"  r="1.1" fill="#ffeebb"/>
-  <circle class="s6" cx="247"  cy="96"  r="0.5" fill="#b8d4ff"/>
+  <circle class="s6" cx="247"  cy="120" r="0.5" fill="#b8d4ff"/>
   <circle class="s7" cx="289"  cy="11"  r="0.9" fill="#ffffff"/>
-  <circle class="s8" cx="334"  cy="63"  r="0.6" fill="#ffffff"/>
+  <circle class="s8" cx="334"  cy="78"  r="0.6" fill="#ffffff"/>
   <circle class="s9" cx="378"  cy="44"  r="1.0" fill="#d4b8ff"/>
-  <circle class="s0" cx="423"  cy="87"  r="0.7" fill="#ffffff"/>
+  <circle class="s0" cx="423"  cy="112" r="0.7" fill="#ffffff"/>
   <circle class="s1" cx="467"  cy="19"  r="1.3" fill="#ffffff"/>
-  <circle class="s2" cx="512"  cy="54"  r="0.5" fill="#b8d4ff"/>
+  <circle class="s2" cx="512"  cy="66"  r="0.5" fill="#b8d4ff"/>
   <circle class="s3" cx="556"  cy="31"  r="0.8" fill="#ffffff"/>
-  <circle class="s4" cx="601"  cy="76"  r="1.0" fill="#ffeebb"/>
+  <circle class="s4" cx="601"  cy="98"  r="1.0" fill="#ffeebb"/>
   <circle class="s5" cx="645"  cy="13"  r="0.6" fill="#ffffff"/>
-  <circle class="s6" cx="689"  cy="66"  r="0.9" fill="#ffffff"/>
+  <circle class="s6" cx="689"  cy="76"  r="0.9" fill="#ffffff"/>
   <circle class="s7" cx="734"  cy="42"  r="0.5" fill="#d4b8ff"/>
-  <circle class="s8" cx="778"  cy="91"  r="1.1" fill="#ffffff"/>
+  <circle class="s8" cx="778"  cy="118" r="1.1" fill="#ffffff"/>
   <circle class="s9" cx="823"  cy="25"  r="0.7" fill="#b8d4ff"/>
-  <circle class="s0" cx="867"  cy="68"  r="0.9" fill="#ffffff"/>
+  <circle class="s0" cx="867"  cy="84"  r="0.9" fill="#ffffff"/>
   <circle class="s1" cx="912"  cy="47"  r="0.6" fill="#ffffff"/>
-  <circle class="s2" cx="956"  cy="88"  r="1.0" fill="#ffeebb"/>
+  <circle class="s2" cx="956"  cy="110" r="1.0" fill="#ffeebb"/>
   <circle class="s3" cx="1001" cy="14"  r="0.8" fill="#ffffff"/>
-  <circle class="s4" cx="1045" cy="57"  r="1.2" fill="#b8d4ff"/>
+  <circle class="s4" cx="1045" cy="63"  r="1.2" fill="#b8d4ff"/>
   <circle class="s5" cx="1090" cy="33"  r="0.5" fill="#ffffff"/>
-  <circle class="s6" cx="1134" cy="79"  r="0.9" fill="#d4b8ff"/>
+  <circle class="s6" cx="1134" cy="96"  r="0.9" fill="#d4b8ff"/>
   <circle class="s7" cx="1178" cy="21"  r="0.7" fill="#ffffff"/>
-  <circle class="s8" cx="1223" cy="64"  r="1.0" fill="#ffffff"/>
+  <circle class="s8" cx="1223" cy="74"  r="1.0" fill="#ffffff"/>
   <circle class="s9" cx="1267" cy="43"  r="0.6" fill="#b8d4ff"/>
-  <circle class="s0" cx="1312" cy="87"  r="0.8" fill="#ffffff"/>
+  <circle class="s0" cx="1312" cy="115" r="0.8" fill="#ffffff"/>
   <circle class="s1" cx="1356" cy="16"  r="1.1" fill="#ffeebb"/>
-  <circle class="s2" cx="1401" cy="58"  r="0.6" fill="#ffffff"/>
-  <circle class="s3" cx="1445" cy="33"  r="0.9" fill="#b8d4ff"/>
-  <circle class="s4" cx="1478" cy="72"  r="0.7" fill="#ffffff"/>
-  <circle class="s5" cx="56"   cy="91"  r="0.7" fill="#ffffff"/>
-  <circle class="s6" cx="145"  cy="58"  r="0.5" fill="#ffffff"/>
-  <circle class="s7" cx="190"  cy="72"  r="0.8" fill="#d4b8ff"/>
-  <circle class="s8" cx="267"  cy="52"  r="0.6" fill="#b8d4ff"/>
-  <circle class="s9" cx="390"  cy="103" r="0.7" fill="#ffffff"/>
-  <circle class="s0" cx="445"  cy="107" r="0.5" fill="#ffeebb"/>
-  <circle class="s1" cx="534"  cy="104" r="0.6" fill="#ffffff"/>
-  <circle class="s2" cx="620"  cy="108" r="0.5" fill="#b8d4ff"/>
-  <circle class="s3" cx="710"  cy="105" r="0.7" fill="#ffffff"/>
-  <circle class="s4" cx="800"  cy="109" r="0.5" fill="#d4b8ff"/>
-  <circle class="s5" cx="890"  cy="106" r="0.6" fill="#ffffff"/>
-  <circle class="s6" cx="980"  cy="110" r="0.5" fill="#ffffff"/>
-  <circle class="s7" cx="1070" cy="107" r="0.7" fill="#b8d4ff"/>
-  <circle class="s8" cx="1160" cy="104" r="0.5" fill="#ffffff"/>
-  <circle class="s9" cx="1250" cy="108" r="0.6" fill="#ffeebb"/>
-  <circle class="s0" cx="1340" cy="105" r="0.5" fill="#ffffff"/>
-  <circle class="s1" cx="1430" cy="109" r="0.7" fill="#d4b8ff"/>
+  <circle class="s2" cx="1401" cy="70"  r="0.6" fill="#ffffff"/>
+  <circle class="s3" cx="1445" cy="38"  r="0.9" fill="#b8d4ff"/>
+  <circle class="s4" cx="1478" cy="92"  r="0.7" fill="#ffffff"/>
+  <circle class="s5" cx="56"   cy="108" r="0.7" fill="#ffffff"/>
+  <circle class="s6" cx="145"  cy="62"  r="0.5" fill="#ffffff"/>
+  <circle class="s7" cx="190"  cy="88"  r="0.8" fill="#d4b8ff"/>
+  <circle class="s8" cx="267"  cy="55"  r="0.6" fill="#b8d4ff"/>
+  <circle class="s9" cx="390"  cy="132" r="0.7" fill="#ffffff"/>
+  <circle class="s0" cx="445"  cy="138" r="0.5" fill="#ffeebb"/>
+  <circle class="s1" cx="534"  cy="130" r="0.6" fill="#ffffff"/>
+  <circle class="s2" cx="620"  cy="141" r="0.5" fill="#b8d4ff"/>
+  <circle class="s3" cx="710"  cy="135" r="0.7" fill="#ffffff"/>
+  <circle class="s4" cx="800"  cy="143" r="0.5" fill="#d4b8ff"/>
+  <circle class="s5" cx="890"  cy="137" r="0.6" fill="#ffffff"/>
+  <circle class="s6" cx="980"  cy="144" r="0.5" fill="#ffffff"/>
+  <circle class="s7" cx="1070" cy="132" r="0.7" fill="#b8d4ff"/>
+  <circle class="s8" cx="1160" cy="139" r="0.5" fill="#ffffff"/>
+  <circle class="s9" cx="1250" cy="145" r="0.6" fill="#ffeebb"/>
+  <circle class="s0" cx="1340" cy="133" r="0.5" fill="#ffffff"/>
+  <circle class="s1" cx="1430" cy="141" r="0.7" fill="#d4b8ff"/>
   <circle class="s2" cx="320"  cy="28"  r="0.6" fill="#ffffff"/>
-  <circle class="s3" cx="502"  cy="73"  r="0.7" fill="#b8d4ff"/>
+  <circle class="s3" cx="502"  cy="85"  r="0.7" fill="#b8d4ff"/>
   <circle class="s4" cx="750"  cy="18"  r="0.5" fill="#ffffff"/>
-  <circle class="s5" cx="930"  cy="81"  r="0.6" fill="#ffffff"/>
+  <circle class="s5" cx="930"  cy="101" r="0.6" fill="#ffffff"/>
   <circle class="s6" cx="1100" cy="9"   r="0.7" fill="#ffeebb"/>
-  <circle class="s7" cx="1290" cy="52"  r="0.5" fill="#ffffff"/>
-  <circle class="s8" cx="1380" cy="94"  r="0.6" fill="#b8d4ff"/>
+  <circle class="s7" cx="1290" cy="58"  r="0.5" fill="#ffffff"/>
+  <circle class="s8" cx="1380" cy="122" r="0.6" fill="#b8d4ff"/>
   <circle class="s9" cx="88"   cy="38"  r="0.7" fill="#ffffff"/>
-  <circle class="s0" cx="460"  cy="55"  r="0.5" fill="#d4b8ff"/>
-  <circle class="s1" cx="685"  cy="98"  r="0.6" fill="#ffffff"/>
+  <circle class="s0" cx="460"  cy="125" r="0.5" fill="#d4b8ff"/>
+  <circle class="s1" cx="685"  cy="127" r="0.6" fill="#ffffff"/>
   <circle class="s2" cx="850"  cy="37"  r="0.7" fill="#ffffff"/>
-  <circle class="s3" cx="1025" cy="74"  r="0.5" fill="#b8d4ff"/>
-  <circle class="s4" cx="1195" cy="48"  r="0.6" fill="#ffffff"/>
+  <circle class="s3" cx="1025" cy="88"  r="0.5" fill="#b8d4ff"/>
+  <circle class="s4" cx="1195" cy="52"  r="0.6" fill="#ffffff"/>
   <circle class="s5" cx="1370" cy="28"  r="0.7" fill="#ffeebb"/>
+  <circle class="s6" cx="175"  cy="143" r="0.5" fill="#ffffff"/>
+  <circle class="s7" cx="735"  cy="146" r="0.6" fill="#b8d4ff"/>
+  <circle class="s8" cx="1115" cy="142" r="0.5" fill="#ffffff"/>
+  <circle class="s9" cx="1490" cy="138" r="0.6" fill="#ffeebb"/>
+  <circle class="s0" cx="350"  cy="72"  r="0.5" fill="#d4b8ff"/>
+  <circle class="s1" cx="940"  cy="59"  r="0.6" fill="#ffffff"/>
 
-  <circle class="s3" cx="234"  cy="52"  r="2.0" fill="#b8d4ff"/>
-  <circle class="s7" cx="678"  cy="32"  r="2.2" fill="#ffffff"/>
-  <circle class="s1" cx="1123" cy="64"  r="1.9" fill="#d4b8ff"/>
-  <circle class="s5" cx="1456" cy="43"  r="1.8" fill="#b8d4ff"/>
-  <circle class="s9" cx="900"  cy="17"  r="1.8" fill="#ffeebb"/>
+  <!-- Feature stars -->
+  <circle class="s3" cx="234"  cy="62"  r="2.1" fill="#b8d4ff"/>
+  <circle class="s7" cx="678"  cy="38"  r="2.3" fill="#ffffff"/>
+  <circle class="s1" cx="1123" cy="82"  r="2.0" fill="#d4b8ff"/>
+  <circle class="s5" cx="1456" cy="52"  r="1.9" fill="#b8d4ff"/>
+  <circle class="s9" cx="900"  cy="20"  r="1.9" fill="#ffeebb"/>
+  <circle class="s4" cx="456"  cy="130" r="1.8" fill="#ffffff"/>
 </svg>
