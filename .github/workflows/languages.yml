@@ -1,0 +1,46 @@
+name: Update Top Languages
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+jobs:
+  update:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Check token
+        id: token
+        run: |
+          if [ -z "${{ secrets.LANGUAGES_TOKEN }}" ]; then
+            echo "::warning::Secret LANGUAGES_TOKEN não configurado — card de linguagens não foi atualizado."
+            echo "ok=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "ok=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/checkout@v4
+        if: steps.token.outputs.ok == 'true'
+
+      - uses: actions/setup-python@v5
+        if: steps.token.outputs.ok == 'true'
+        with:
+          python-version: "3.13"
+
+      - name: Generate top-langs.svg
+        if: steps.token.outputs.ok == 'true'
+        run: python scripts/top_languages.py
+        env:
+          GH_TOKEN: ${{ secrets.LANGUAGES_TOKEN }}
+
+      - name: Commit if changed
+        if: steps.token.outputs.ok == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/top-langs.svg
+          git diff --cached --quiet || (git commit -m "chore: atualiza card de linguagens" && git push)
